@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #REM ************************************************************************************
 #REM Description: start naming service (rmi registry)
 #REM Author: Rui S. Moreira

@@ -16,6 +16,7 @@ export SCRIPT_ROLE=$1
 #@REM =====================================================================================================
 # @REM ==== PC STUFF ====
 export JDK=/home/capella/Documents/Java/jdk1.8.0_241
+#export JDK=/usr/lib/jvm/java-1.11.0-openjdk-amd64
 #@REM These vars will be used to check the output folder (whereto classes are generated)
 export NETBEANS=NetBeans
 export INTELLIJ=IntelliJ
@@ -26,7 +27,7 @@ export USERNAME=capella
 #@REM ==== JAVA NAMING STUFF ====
 #/home/capella/Documents/Faculdade/SD/sd
 export JAVAPROJ_NAME=SD2020
-export JAVAPROJ=/home/${USERNAME}/Documents/Faculdade/SD/sd/${JAVAPROJ_NAME}
+export JAVAPROJ=/home/${USERNAME}/Documents/Faculdade/SD/sd/
 
 export PACKAGE=visitor
 export PACKAGE_PREFIX=edu.ufp.inf.sd.rmi
@@ -113,3 +114,6 @@ export CLIENT_SECURITY_POLICY=file:///${JAVAPROJ}/${JAVAPROJ_SRC}/${JAVASECURITY
 export SETUP_SECURITY_POLICY=file:///${JAVAPROJ}/${JAVAPROJ_SRC}/${JAVASECURITYPATH}/setup.policy
 export RMID_SECURITY_POLICY=file:///${JAVAPROJ}/${JAVAPROJ_SRC}/${JAVASECURITYPATH}/rmid.policy
 export GROUP_SECURITY_POLICY=file:///${JAVAPROJ}/${JAVAPROJ_SRC}/${JAVASECURITYPATH}/group.policy
+
+
+#/home/capella/Documents/Faculdade/SD/sd/out/production/SD2020

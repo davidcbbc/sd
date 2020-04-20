@@ -36,7 +36,8 @@ public class DigLibFactoryImpl extends UnicastRemoteObject implements DigLibFact
     public DigLibSessionRI login(String uname, String pw) throws RemoteException {
         if (db.exists(uname, pw)) {
             if(!this.sessions.containsKey(uname)){
-                DigLibSessionRI digLibSessionRI = new DigLibSessionImpl(db);
+                DigLibSessionRI digLibSessionRI = new DigLibSessionImpl(this.db,this.sessions);
+                this.sessions.put(uname,digLibSessionRI);
                 return digLibSessionRI;
             } else {
                 return this.sessions.get(uname);

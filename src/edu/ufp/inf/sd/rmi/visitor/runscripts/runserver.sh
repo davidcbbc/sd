@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #@REM ************************************************************************************
 #@REM Description: run CalculadorServer
 #@REM Author: Rui S. Moreira

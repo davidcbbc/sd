@@ -2,11 +2,16 @@ package edu.ufp.inf.sd.rmi.diglib.server;
 
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DigLibSessionImpl implements DigLibSessionRI {
     private DBMockup db;
-    public DigLibSessionImpl(DBMockup db) {
+    private HashMap<String, DigLibSessionRI> sessions;
+
+
+    public DigLibSessionImpl(DBMockup db, HashMap<String, DigLibSessionRI> sessions) {
         this.db = db;
+        this.sessions = sessions;
     }
 
     @Override
